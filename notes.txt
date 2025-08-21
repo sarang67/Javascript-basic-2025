@@ -8,3 +8,14 @@ Day 1
 6) go to the folder Javascript-basic-2025 and 
 7) run npm install
 8) npm run dev
+
+
+Day 2
+-------
+global scope local scope
+windows object and behaviour
+let , const , var (all the diffrences , and when we should use)
+decision making
+= (memory allocation)
+diffrence of script nature
+Truthy falsy check via Booleean() function and !! operatior
