@@ -8,3 +8,25 @@ Day 1
 6) go to the folder Javascript-basic-2025 and 
 7) run npm install
 8) npm run dev
+
+Day 6 
+------
+// type checking  in string
+// string methods (Static and prototype)
+Boolean in dpth
+    // boolean literal
+    // boolean function for type conversion
+    // boolean as a function constructor
+    // boolean type checking
+    // immutability
+    // Boolean prototype method valueOf()
+
+undefined 
+null
+
+Function in depth
+    // function declration
+    // function expression (annonymous)
+    // function expression (with  name)
+    //arrow function Shorthand function
+    // function by using FUnction Constructor (dont need to practive and check) avoid it just for knowledge purpose
