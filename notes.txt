@@ -8,3 +8,38 @@ Day 1
 6) go to the folder Javascript-basic-2025 and 
 7) run npm install
 8) npm run dev
+
+
+Day 8
+-------
+function closure
+iifes and its uses
+Nature of this keyword
+typechecking function
+default parameter /argument
+
+/* 
+closure, is the behaviour of function in javascript,
+child functioncan access the property of its parent function , when its parent execution context already poped up from the stack
+*/
+
+//iife  Immediately Invoked Functions Expressions (IIFEs):=
+/*
+IIFES(imediate invoked function execution statement ):- we can call our function efter juts writing it immediatly, so the purpose of this we can hide or do data privacy using the concept of IIFE. iife is executed only once, there is no concept of reuse the purpose of iife only is data privacy of global execution contecxt so accidently our variable will not be changed because they are only scoped inside the iife.
+
+
+(function(aValue){
+	var a = aValue || 10;
+	console.log(a);
+})();
+
+*/
+
+/*
+this variable. --> 
+	it's rule in normal function it will point window object, in case of method it will point the object that method is associated. 
+    if you use  'use strict' , then this will give undefined , in global context and function will also give undefined
+
+    arrow function does not have its own this behaviour , its borrow this from its scope and adopt the same.
+ 
+*/

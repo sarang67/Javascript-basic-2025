@@ -11,7 +11,129 @@
       <div class="logo">
         <p class="logo-name">JS-Basic</p>
       </div>
+    </header>
     <div id="app"></div>
     <script type="module" src="src/main.js"></script>
+
+    <script>
+      // console.log(test);
+      // test = "i changed the variable";
+      // console.log(test);
+    </script>
+
+    <script>
+      // function test() {}
+      // test();
+
+      // (function () {
+      //   var myName = "sarang";
+      //   console.log("***", myName);
+      // })();
+    </script>
+
+    <script>
+      // function test2() {
+      //   console.log(">", myName);
+      //   var myName = "sarang jain";
+      //   console.log("--->", myName);
+      // }
+      // test2();
+
+      //   (function () {
+      //     console.log("--->", myName);
+      //     var myName = "sarang jain";
+      //     console.log("--->", myName);
+      //   })();
+      //
+    </script>
+
+    <script>
+      // function test3() {
+      //   console.log("===>", myName);
+      //   var myName = "sarang kumar jain";
+      //   console.log("===>", myName);
+      // }
+      // test3();
+
+      // (function () {
+      //   console.log("===>", myName);
+      //   var myName = "sarang kumar jain";
+      //   console.log("===>", myName);
+      // })();
+    </script>
+
+    <script>
+      console.log("------------------");
+      // global case window
+      console.log(this);
+
+      function test() {
+        console.log(this); // window
+      }
+
+      test();
+
+      let testExp = function () {
+        console.log(this); // window
+      };
+
+      testExp();
+
+      console.log(this);
+      let testArrow = () => {
+        console.log(this); //// adopted by its scope this value
+      };
+
+      testArrow();
+
+      let obj = {
+        myName: "sarang jain",
+        age: 36,
+        getInfo: function () {
+          console.log(this); // always point to its object, whiere it is written
+          console.log(this.myName, this.age);
+
+          let _this = this;
+
+          function checkThisAgain() {
+            console.log(this); // window object , this is the problem
+            // console.log(this.myName, this.age);
+            console.log(_this.myName, _this.age);
+
+            let testArrow = () => {
+              console.log("####--->", this); // window
+            };
+            testArrow();
+          }
+
+          checkThisAgain();
+
+          let checkThisAgainwithArrow = () => {
+            console.log(this); // point to its object
+            console.log(this.myName, this.age);
+          };
+
+          checkThisAgainwithArrow();
+        },
+      };
+
+      obj.getInfo();
+    </script>
+
+    <script>
+      console.log("********************");
+
+      console.log(this);
+
+      function test() {
+        "use strict";
+
+        var myname = "sarang jain";
+        console.log(myname);
+        console.log(this);
+      }
+
+      test();
+    </script>
   </body>
 </html>
