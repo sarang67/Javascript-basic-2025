@@ -8,3 +8,29 @@ Day 1
 6) go to the folder Javascript-basic-2025 and 
 7) run npm install
 8) npm run dev
+
+Day 9 
+------
+// Nature of this keyword (using function , object and call bindapply)
+// callback function
+
+Object in depth
+---------------
+//object literal
+// Object function Constructor
+// mutable & pass by refrence
+// object properties method value
+// object keys shorthand dynamic properties
+
+/*
+this variable. --> 
+	it's rule in normal function it will point window object, in case of method it will point the object that method is associated. 
+ 
+*/
+
+// callback this is a design pattern you write function where another function is being called , which you have passedin the parameter , in terms of api , setTimeout ,click etc thy are taking afunctionand executing them call back , after finishing own works
+/*
+Callback function :- such function that are not being called by you , this is called by another function. means that function is passed in another function as a parameter , and that function will call them instead you,called callback function.
+
+callback function:-  A function you give to another function, to be run when the other function is finished. so the function you will call (i.e invoke), 'Calls back' by calling the function you gave it when it finishes.	
+*/
