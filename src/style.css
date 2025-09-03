@@ -47,7 +47,7 @@ body {
 #app h1 {
   margin: 0;
   font-size: 3rem;
-  color: #fff;
+  color: gray;
 }
 
 #app h1:before {
