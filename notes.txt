@@ -8,3 +8,20 @@ Day 1
 6) go to the folder Javascript-basic-2025 and 
 7) run npm install
 8) npm run dev
+
+
+Day 11
+-------
+object-merging usieng spread and object.assign 
+object-type-checking
+iteration object (imperitai way) 
+iteration object (declarative way) using array forEach 
+
+Array in depth
+------------
+array-literal-function-constructor
+array are mutable pass by refrnce
+collection of anything
+array-indexes-properties-elements
+multidimensional-arrays
+array-destructuring
