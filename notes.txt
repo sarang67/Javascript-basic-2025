@@ -8,3 +8,17 @@ Day 1
 6) go to the folder Javascript-basic-2025 and 
 7) run npm install
 8) npm run dev
+
+Day 13
+-----
+array-reverse-sort (both are mutable)
+arrays-type-checking
+array-imperative-iteration
+iteration-break-continue
+// The break statement 'jumps out' of a loop.
+// The continue statement 'jumps over' one iteration in the loop.
+iteration-for-of
+foreach
+map
+filter
+some
