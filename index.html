@@ -1,19 +1,44 @@
-<!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Javascript DOM</title>
+    <style></style>
+    <script>
+      // capturing the event
+
+      window.addEventListener("load", () => {
+        // console.log(
+        //   "secont event , i am load event, and my all resource has been loaded"
+        // );
+        // const divELement2 = document.getElementById("app");
+        // console.log(divELement2);
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // console.log("first event , my document loaded");
+        // const divELement2 = document.getElementById("app");
+        // console.log(divELement2);
+      });
+    </script>
   </head>
-  <body>
+  <body><!DOCTYPE html>
     <header class="header">
       <div class="logo">
-        <p class="logo-name">JS-Basic</p>
+        <p class="logo-name">JS DOM</p>
       </div>
     </header>
     <div id="app"></div>
 
+    <script>
+      // const divELement = document.getElementById("app");
+      // console.log(divELement);
+    </script>
+
     <script type="module" src="src/main.js"></script>
+
+    <!-- async (asynchronus  may block or not)  / defer (asynchronus non blocking)  / none (synchronus blocking) -->
   </body>
 </html>

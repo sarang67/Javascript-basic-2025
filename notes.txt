@@ -8,3 +8,102 @@ Day 1
 6) go to the folder Javascript-basic-2025 and 
 7) run npm install
 8) npm run dev
+
+Day 15
+--------
+DOMContentLoaded event
+load event
+async defer none attribute
+document and page load
+javascript-loading-async-defer
+dom-nodes-explained
+creating-dom-elements
+changing-dom-node-contents
+innerHTML(using literal string)-versus-createelement(using dom createEelement)
+
+DOMContentLoaded event:-
+=================
+DOMContentLoaded , event is fired our whole html document has been completed to load and parse. it will not wait to to load stylesheet , images amy stylesheet , further js which is being loaded. so meand our complete dom skeltor is loaded and parse then our DOMContent is ready. 
+
+load event:-
+==========
+load event will be fired when all the resources all js , style images , other pages anything are loaded , then only this event will be fired.
+
+1. async Attribute
+
+<script src="script.js" async></script>
+
+Download: Starts immediately, in parallel with HTML parsing.
+Execution: As soon as it's downloaded, script is executed immediately.
+Blocking behavior: Interrupts HTML parsing to run the script.
+Execution order: Not guaranteed (scripts may execute in any order).
+Use when:
+Scripts are independent and do not rely on other scripts or DOM content.
+Example: analytics, ads, third-party widgets.
+
+2. defer Attribute
+<script src="script.js" defer></script>
+
+Download: Starts immediately, in parallel with HTML parsing.
+Execution: Script is executed after HTML is fully parsed.
+Blocking behavior: Does not block HTML parsing.
+Execution order: Maintains order if multiple deferred scripts are used.
+
+3. none Attribute
+
+If you don’t use defer or async attributes in a <script> tag, the browser treats the script as synchronous and blocking by default.
+Default behavior (<script src="script.js"></script>)
+
+Without defer or async, the browser:
+Stops parsing the HTML when it reaches the <script> tag.
+Downloads and executes the script immediately.
+Resumes parsing the rest of the HTML after the script has been fully loaded and executed
+
+Summary of Script Loading Behaviors
+Attribute	When Script is Downloaded	When Script is Executed				Blocks HTML Parsing
+------------------------------------------------------------------------------------------------
+(None)	When encountered in the HTML	Immediately after download					✅ Yes
+defer	In parallel with HTML parsing	After HTML is parsed (DOMContentLoaded)		❌ No
+async	In parallel with HTML parsing	As soon as downloaded (immediate)			❌ No (but can disrupt order)
+
+what we should use on production
+-------------------------------
+If you don’t use defer or async attributes in a <script> tag, the browser treats the script as synchronous and blocking by default.
+
+Without defer or async, the browser:
+
+1) Stops parsing the HTML when it reaches the <script> tag.
+
+2) Downloads and executes the script immediately.
+
+3) Resumes parsing the rest of the HTML after the script has been fully loaded and executed.
+
+/* Node Type
+https://www.w3schools.com/jsref/prop_node_nodetype.asp
+1	Element	
+2	Attr	
+3	Text	
+4	CDATASection	
+5	EntityReference	
+6	Entity	
+7	ProcessingInstruction	
+8	Comment	  
+9	Document	
+10	DocumentType	
+11 	DocumentFragment	
+12	Notation
+*/
+
+Node Type	Name	nodeType Value	Description
+1	Element Node	1	Represents HTML elements like <div>, <p>, <body>, etc.
+2	Attribute Node	2	Represents attributes like id="main" (rarely used directly now).
+3	Text Node	3	Represents actual text content inside elements.
+4	CDATA Section Node	4	Used in XML (not HTML) for character data that shouldn’t be parsed.
+5	Entity Reference	5	Rare in modern HTML/XML (used for entity references like &nbsp;).
+6	Entity Node	6	Obsolete; used in older XML DTDs.
+7	Processing Instruction	7	Used in XML to keep processor-specific instructions.
+8	Comment Node	8	Represents comments like <!-- this is a comment -->.
+9	Document Node	9	Represents the entire HTML or XML document (the document object).
+10	Document Type Node	10	Represents the <!DOCTYPE html> declaration.
+11	Document Fragment	11	A lightweight, minimal document object used for temporary content.
+12	Notation Node	12	Rare; used in XML and DTDs to declare notations.
