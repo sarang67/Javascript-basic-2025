@@ -8,3 +8,23 @@ Day 1
 6) go to the folder Javascript-basic-2025 and 
 7) run npm install
 8) npm run dev
+
+
+Day 16
+-------
+document-fragments
+inserting-dom-elements
+inserting-string-templates
+replacing-dom-elements
+cloning-dom-elements
+removing-dom-elements
+
+Querying and Traversing the DOM
+-----------------------------
+querying-dom-nodes-htmlcollections  :- it always give live condition. , these are on htmlelement level
+    --> byId 
+    --> by class name
+    --> by tag name
+querying-dom-nodes-nodelist :- it will give snapshot condition not live condition., these are on node level
+    --> querySelector()
+    --> querySelectorAll()
